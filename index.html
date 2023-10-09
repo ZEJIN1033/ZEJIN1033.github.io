@@ -1,8 +1,29 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello World<h1>
-   <h1>This is ZJ's page<h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ze's Page</title>
+    <link rel="stylesheet" type="text/css" href="decoration.css">
+    <script src="function.js" defer></script>
+</head>
+<body>
+<h1>Welcome to my web page</h1>
+    <h2>Following are some websites related to ICL:</h2>
+<nav>
+    <a href="https://www.imperial.ac.uk">Imperial Official Website</a> |
+    <a href="https://www.imperial.ac.uk/sport/members/identity/login?signin=c59a1c8b97721a95a4b5278d2305f97c">Imperial Gym Website</a> |
+    <a href="https://scientia.doc.ic.ac.uk/2324/timeline">Sciencia</a>
+</nav>
+    <h2 id="heading_int">Tape the button to see a lovely cat!</h2>
+        <script>
+            function createParagraph() {
+                let para = document.createElement('p');
+                para.textContent = 'Not this one!!!';
+                heading_int.appendChild(para);
+            }
+        </script>
+        <button onclick="createParagraph()" type="button" class="btn btn-primary">Do not click me!</button>
+        <button id="button1">Show image</button>
+        <img src="Cat.jpg" id="chart1" class="responsive">
+</body>
 </html>
