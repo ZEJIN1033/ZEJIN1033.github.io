@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    
+    <!--Set title -->
     <title>Ze's Page</title>
+  
+    <!--Link CSS stylesheets -->
     <link rel="stylesheet" type="text/css" href="decoration.css">
+  
+    <!--Include an external JS file -->
     <script src="function.js" defer></script>
-</head>
-<body>
-<h1>Welcome to my web page</h1>
+  </head>
+
+  <body>
+    <!--Set heads -->
+    <h1>Welcome to my web page</h1>
     <h2>Following are some websites related to ICL:</h2>
-<nav>
-    <a href="https://www.imperial.ac.uk">Imperial Official Website</a> |
-    <a href="https://www.imperial.ac.uk/sport/members/identity/login?signin=c59a1c8b97721a95a4b5278d2305f97c">Imperial Gym Website</a> |
-    <a href="https://scientia.doc.ic.ac.uk/2324/timeline">Sciencia</a>
-</nav>
+
+    <nav>
+      <!--Create the hyperlinks -->
+      <a href="https://www.imperial.ac.uk">Imperial Official Website</a> |
+      <a href="https://www.imperial.ac.uk/sport/members/identity/login?signin=c59a1c8b97721a95a4b5278d2305f97c">Imperial Gym Website</a> |
+      <a href="https://scientia.doc.ic.ac.uk/2324/timeline">Sciencia</a>
+    </nav>
+
+    <!--Use of internal JS which creates a new paragraph after a click event -->
     <h2 id="heading_int">Tape the button to see a lovely cat!</h2>
-        <script>
-            function createParagraph() {
-                let para = document.createElement('p');
-                para.textContent = 'Not this one!!!';
-                heading_int.appendChild(para);
-            }
-        </script>
-        <button onclick="createParagraph()" type="button" class="btn btn-primary">Do not click me!</button>
-        <button id="button1">Show image</button>
-        <img src="Cat.jpg" id="chart1" class="responsive">
-</body>
+    <script>
+      function createParagraph() {
+          let para = document.createElement('p');
+          para.textContent = 'Not this one!!!';
+          heading_int.appendChild(para);
+      }
+    </script>
+    <button onclick="createParagraph()" type="button" class="btn btn-primary">Do not click me!</button>
+
+    <!--Set the button which has functionality of showing the cat
+    image, the functionality is added by the JS -->
+    <button id="button1">Show image</button>
+    <img src="Cat.jpg" id="chart1" class="responsive">
+  </body>
 </html>
